@@ -3,7 +3,7 @@ logo: "/images/Rajiv-1.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Research Scientist with 4+ years of experience in Medical Imaging Research, 
   Machine Learning and Data Science. 
-  
+  <br><br>
   <a href="https://www.linkedin.com/in/rajivmenong/">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
