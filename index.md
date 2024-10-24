@@ -2,9 +2,9 @@
 
 ---
 
-### Category Name 1 
-
-[Project 1 Title](/sample_page)
+### Comparison of Compressed Sensing Algorithms for accelerating quantitative MRI Brain mapping 
+In this study, 5 compressed sensing algorithms were tested for acceleration factors (2, 5, 10) for their ability to reconstruct quantitative brain maps compared to a fully sampled reference.
+[Project Details](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
