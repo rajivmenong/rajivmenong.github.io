@@ -1,11 +1,12 @@
-title: John Doe # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
+title: Rajiv Menon # your name (or website title) here
+logo: "/images/Rajiv-1.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Research Scientist with 4+ years of experience in Medical Imaging Research, 
   <br><br>
+  Machine Learning and Data Science. 
   Second description 
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/rajivmenong/">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
