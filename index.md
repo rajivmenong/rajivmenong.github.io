@@ -5,7 +5,7 @@
 ### Comparison of Compressed Sensing Algorithms for accelerating quantitative MRI Brain mapping 
 In this study, 5 compressed sensing algorithms were tested for acceleration factors (2, 5, 10) for their ability to reconstruct quantitative brain maps compared to a fully sampled reference.
 [Project Details](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/CS_Algorithm_Compare.png?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
