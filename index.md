@@ -1,5 +1,5 @@
 ## Selected Projects in Research, Machine Learning and Data Science
-
+---
 
 ### Learning based Optimization of data sampling for quantitative MRI brain mapping 
 In this study, a fast data-driven optimization algorithm, bias-accelerated subset selection (BASS), was used to generate optimized sampling patterns for data acquisition in MRI brain mapping
