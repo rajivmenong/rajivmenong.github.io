@@ -1,0 +1,98 @@
+
+%---------------------------------------------------------------------------
+%   This script should open k-space data and CS info end reconstruct images
+%   utilizing CS
+%   Prior: L1 norm of the spatio-temporal finite difference
+%---------------------------------------------------------------------------
+
+%select data to work with
+data='Sample_data';
+
+rootdir='/xx/datapath/';
+basedir = [rootdir data '/'];
+cd(basedir);
+
+
+addpath([basedir '1_Code/']);
+
+datadir=[basedir '2_Data/'];
+meth= 'STFD';
+
+%-------------------
+rmethod= ['recon_' meth]; %change here to a different CS method 
+
+% loading size info - check dim{'Colum' 'Lines' 'Slices' 'T1rhoTim' 'Channels' }
+load([datadir 'kdata/T1rho_TSL_pos_dim.mat'],'par');
+
+accels = [2 4 6 8 10];
+
+for rep=1:1
+for ac= 1:length(accels)
+slice=str2num(getenv('SLURM_ARRAY_TASK_ID'));
+
+    
+
+% loading k-space data and CS info
+load([datadir 'kdata/T1rho_data' num2str(slice) '.mat'],'data');
+load([datadir 'cs_info/T1rho_cs_info' num2str(slice) '_A' num2str(accels(ac))...
+    '_R' num2str(rep) '.mat'],'sample_mask','L2_res','L2_noise','accel','rep');
+
+for coil=1:par.pos_dim(5)
+y(:,:,:,coil)=data(:,:,:,coil).*sample_mask(:,:,:);
+end
+param.y=y;
+clear y recon_STFD;
+
+%for each slice, coilmaps are 'Lines'x'Slices'x'Channels'
+load([datadir 'coilmap/T1rho_coilmaps' num2str(slice) '.mat'],'coilmap');
+
+%Creating CS matrix
+param.E = Emat_xyt(sample_mask,coilmap);
+%clear sample_mask coilmap;
+
+%for each slice, images are 'Lines'x'Slices'x'T1rhoTim'
+load([datadir 'images/T1rho_images' num2str(slice) '.mat'],'images');
+param.x_exact=images;
+
+%loading prior Fatrix
+param.W = FD_ST(1,2,4);
+recon_STFD.meth='STFD';
+
+%backprojection
+recon_fft=param.E'*param.y;
+
+%parameters
+Wx=param.W*recon_fft;
+load([basedir '3_Recon/recon_STFD/lambda_STFD.mat'],'lambda_accel_w');
+param.lambda_S=lambda_accel_w(accels(ac));
+param.lambda_L=0;
+
+%CS reconstruction using FISTA-FGP
+param.ar=3072;
+param.iterfgp=25;
+param.c=1;
+param.nite = 45;
+param.display=1;
+param.errorTol=1e-5;
+param.restart=0;
+param.backtracking=0;
+param.optimized=0;
+
+%Reconstruction info in recon structure
+recon_STFD.accel=accels(ac);
+recon_STFD.rep=rep;
+recon_STFD.slice=slice;
+
+recon_STFD.im=recon_fft;
+
+[recon_STFD] = L2_LpS_FISTA_FGP(recon_STFD,param);
+
+
+%SAVE RECON
+save([basedir '3_Recon/recon_STFD/recon_STFD_' num2str(slice) '_A' num2str(accels(ac))...
+    '_R' num2str(rep) '.mat'],'recon_STFD');
+
+end
+
+end
+
