@@ -1,4 +1,4 @@
-## This can be your internal website page / project page
+## Learning based Optimization of data sampling for quantitative MRI brain mapping
 
 **Project description:** 3D-T1rho brain mapping has many useful biomedical applications but requires long data acquisition times. The goal 
 of the study was to apply a fast data-driven optimization approach, bias- accelerated subset selection (BASS), to generate optimal sampling 
