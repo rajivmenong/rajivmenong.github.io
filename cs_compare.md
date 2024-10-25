@@ -8,15 +8,15 @@
 
 ### Results
 
-<img src="images/Figure1.png?raw=true"/>
+<img src="images/Figure1.PNG?raw=true"/>
 <br><br>
-<img src="images/Figure2.png?raw=true"/>
+<img src="images/Figure2.PNG?raw=true"/>
 <br><br>
-<img src="images/Figure3.png?raw=true"/>
+<img src="images/Figure3.PNG?raw=true"/>
 <br><br>
-<img src="images/Figure4.png?raw=true"/>
+<img src="images/Figure4.PNG?raw=true"/>
 <br><br>
-<img src="images/Figure5.png?raw=true"/>
+<img src="images/Figure5.PNG?raw=true"/>
 
 ### DISCUSSION
 The results in this study suggest that while at lower AF the choice of CS method is insignificant, at higher AF, the highest gain is obtained from using the STFD technique. The performance of the low rank technique is comparable but worse when compared to the STFD technique. Although L+S method is a promising approach, its performance is not better than the other techniques. The combination of first order spatial and second order temporal finite differences provides excellent performance, but the regularization parameters have to be chosen carefully to avoid being over- regularized. 
