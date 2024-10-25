@@ -3,7 +3,7 @@
 ### Q: Background of this method?
 Late gadolinium enhancement (LGE) was a cardiac MRI technique developed in the early 2000’s and offered a way to visualize areas of the heart that were damaged after a heart attack. This technique allowed to distinguish between viable tissue and non-viable heart tissue and take treatment decisions based on this. This technique has since become standard of clinical care. 
 
-Although it is a widely used clinical technique it has two main drawbacks. First, it requires the cardiac patient to hold his/her breath during the scanning process to avoid breathing motion of the heart. This is uncomfortable for the patient and it slows down the image acquisition speed. About 10-12 images (which takes 10-12 breath-hold scans) are typically required to cover the heart and this takes about 15-20 minutes to acquire. Second, the clinically used LGE technique is a 2D technique and as such does not cover the 
+Although it is a widely used clinical technique it has two main drawbacks. First, it requires the cardiac patient to hold his/her breath during the scanning process to avoid breathing motion of the heart. This is uncomfortable for the patient and it slows down the image acquisition speed. About 10-12 images (which takes 10-12 breath-hold scans) are typically required to cover the heart and this takes about 15-20 minutes to acquire. Second, the clinically used LGE technique is a 2D technique and as such does not cover the heart in 3 dimensions with equal resolution.
 
 ### Q:  	What were the main challenge in this project ?
 The main challenge was to develop a technique to estimate motion with minimal time penalty during imaging
