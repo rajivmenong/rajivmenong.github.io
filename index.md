@@ -7,7 +7,7 @@ In this study, we applied a fast data-driven optimization algorithm, called bias
 <br><br>
 Menon RG, Zibetti MVW, Regatte RR. Mag Reson Medicine. 2023. <br>
 Link to Publication: [doi: 10.1002/mrm.29445](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29445) <br><br>
-[Project Details](/sample_page) | [Code]
+[Project Details](/ddosp_project) | [Code]
 <img src="images/DDOSP.png?raw=true"/>
 
 ---
