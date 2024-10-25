@@ -25,7 +25,7 @@ In this study, we developed a novel MRI method that allows cardiac patients to b
 
 Menon RG, G Wilson Miller, Jean Jeudy, Sanjay Rajagopalan, Taehoon Shin
 Link to Publication: [doi: 10.1002/mrm.26234.](https://onlinelibrary.wiley.com/doi/10.1002/mrm.26234) <br><br>
-[Project Details](/sample_page) | [Full Paper](https://www.dropbox.com/scl/fi/wpjpfi86rbtsn43wu9hra/03_Menon_et_al-2017-Magnetic_Resonance_in_Medicine.pdf?rlkey=iw70beto7zl7xzulqt87iow3a&st=9ng0jpmy&dl=0) | 
+[Project Details](/LGE_Details) | [Full Paper](https://www.dropbox.com/scl/fi/wpjpfi86rbtsn43wu9hra/03_Menon_et_al-2017-Magnetic_Resonance_in_Medicine.pdf?rlkey=iw70beto7zl7xzulqt87iow3a&st=9ng0jpmy&dl=0) | 
 <img src="images/LGE_Summary.png?raw=true"/>
 
 
