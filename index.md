@@ -16,7 +16,7 @@ Here 5 compressed sensing algorithms were tested for acceleration factors (2, 5,
 <br><br>
 Menon RG, Zibetti MVW, Jain R, Ge Y, Regatte RR. J Magn Reson Imaging. 2021. 
 Link to Publication: [doi: 10.1002/jmri.27421.](https://onlinelibrary.wiley.com/doi/10.1002/jmri.27421) <br><br>
-[Project Details](/cs_compare)|[Full Paper](https://www.dropbox.com/scl/fi/1gugji2rntb3962vqdcmq/12_Menon_etal_2020_BrainT1rho_CScompare.pdf?rlkey=k9ar8f35cl35n5nvk9f8f29hz&st=bmia8f1n&dl=0)
+[Project Details](/cs_compare)|[Full Paper](https://www.dropbox.com/scl/fi/1gugji2rntb3962vqdcmq/12_Menon_etal_2020_BrainT1rho_CScompare.pdf?rlkey=k9ar8f35cl35n5nvk9f8f29hz&st=bmia8f1n&dl=0) |[Code](/CS_compare.txt)
 <img src="images/CS_Algorithm_Compare.png?raw=true"/>
 
 ---
