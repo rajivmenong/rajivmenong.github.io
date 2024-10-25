@@ -1,35 +1,22 @@
-## Learning based Optimization of data sampling for quantitative MRI brain mapping
+## Comparison of Compressed Sensing Algorithms for accelerating quantitative MRI Brain mapping
 
-**Project description:** 3D-T1rho brain mapping has many useful biomedical applications but requires long data acquisition times. The goal 
-of the study was to apply a fast data-driven optimization approach, bias- accelerated subset selection (BASS), to generate optimal sampling 
-patterns (SPs) for compressed sensing (CS) reconstruction for brain 3D-T1ρ MRI. Fully sampled (FS) Cartesian, 3D-T1ρ MRI brain data was obtained. 
-The performance of Poisson disc (PD) and optimized SP were compared using normalized root mean square error (NRMSE). The data-driven optimized
-SP provides upto 2 times (NRMSE=0.09 optimized SP vs 0.18 PD-SP) improvement in images at the highest AFs tested.
+**Project description:** We compared the performance of 5 compressive sensing
+(CS) algorithms with acceleration factors (AF) up to 10. We evaluated image quality and T1ρ estimation errors as a function of AF. Six healthy volunteers were recruited and they underwent T1ρ imaging of the whole brain with full Cartesian acquisition. Assessment of image reconstruction and T1ρ estimation errors in this study show that the CS method using spatial and temporal finite differences as a regularization function performs the best for accelerating T1ρ quantification in the brain.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+### Methods
+3D-Brain MRI data were acquired. The fully sampled reconstruction served as the reference, and the resulting T1ρ maps were used to compare the performance of the CS algorithms used. The reference images were reconstructed with SENSE, with coil sensitivity maps estimated using the ESPIRiT algorithm. The fully sampled dataset was retrospectively undersampled with a 2D Poisson-disk to simulate AF (AF= 2,5,10). Five different CS reconstruction models were tested with regularization functions: spatial and temporal finite differences (STFD), exponential dictionary (DIC), 3D wavelet transform (WAV), low-rank (LOW), and low-rank plus sparse model with spatial finite differences (LPS-SFD). Three techniques (STFD, DIC, WAV) used an l1-norm penalty, LOW used a nuclear norm, and the LPS-SFD used where L used nuclear norm, and the S used an l1-norm regularization penalty.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+### Results
 
-```Matlab
-if (isAwesome):
-  return True
+<img src="images/Figure1.png?raw=true"/>
+<br><br>
+<img src="images/Figure2.png?raw=true"/>
+<br><br>
+<img src="images/Figure3.png?raw=true"/>
+<br><br>
+<img src="images/Figure4.png?raw=true"/>
+<br><br>
+<img src="images/Figure5.png?raw=true"/>
 
-```
-
-### 2. Assess assumptions on which statistical inference will be based
-
-```Python
-if (isAwesome):
-  return True
-
-```
-
-### 3. Support the selection of appropriate statistical tools and techniques
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
-### 4. Provide a basis for further data collection through surveys or experiments
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### DISCUSSION
+The results in this study suggest that while at lower AF the choice of CS method is insignificant, at higher AF, the highest gain is obtained from using the STFD technique. The performance of the low rank technique is comparable but worse when compared to the STFD technique. Although L+S method is a promising approach, its performance is not better than the other techniques. The combination of first order spatial and second order temporal finite differences provides excellent performance, but the regularization parameters have to be chosen carefully to avoid being over- regularized. 
