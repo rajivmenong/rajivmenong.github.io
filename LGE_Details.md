@@ -16,10 +16,10 @@ Late Gadolinium enhancement (LGE) is an intravascular contrast agent (meaning th
 
 
 ### Q: 	What are the advantages of this implementation vs the conventional implementation?
-Free-breathing: this increases patient comfort. More importantly patients who get cardiac imaging may be non compliant to breath hold instructions due to acute onset or may have trouble holding their breath. This will result in non- diagnostic quality images using the conventional technique while our technique vastly outperforms in such cases. This is crucial advantage in patients who are the most vulnerable.
-3D coverage: our technique offers contiguous 3D coverage of the left ventricle which is better for diagnosis than 2D conventional technique.
-Multiple views: because our technique offers near isotropic resolution (imaging voxel is a cube in shape) the data can be reformatted offline in different views. Conventional LGE requires a separate acquisition of these alternate views. Typically in a cardiac MR exam 12-14 Slices of a “short- axis” view is taken, after which 2-4 slices in a “long-axis “ view are taken. In our method, we can get the long- axis (and other) views for free by offline refomatting of the 3D data. 
-Takes a very less amount of time : while the conventional MRI can take up to 15 minutes to acquire data, our method takes only 3 minutes. This represents a 5-fold reduction in MRI scanning time.
+**1. Free-breathing:** This significantly increases patient comfort. More importantly patients who get cardiac imaging may be non compliant to breath hold instructions due to acute onset or may have trouble holding their breath. This will result in non- diagnostic quality images using the conventional technique while our technique vastly outperforms in such cases. This is crucial advantage in patients who are the most vulnerable.<br>
+**2. 3D coverage:** our technique offers contiguous 3D coverage of the left ventricle which is better for diagnosis than 2D conventional technique.<br>
+**3. Multiple views:** because our technique offers near isotropic resolution (imaging voxel is a cube in shape) the data can be reformatted offline in different views. Conventional LGE requires a separate acquisition of these alternate views. Typically in a cardiac MR exam 12-14 Slices of a “short- axis” view is taken, after which 2-4 slices in a “long-axis “ view are taken. In our method, we can get the long- axis (and other) views for free by offline refomatting of the 3D data. <br>
+**4. Takes a very less amount of time:** while the conventional MRI can take up to 15 minutes to acquire data, our method takes only 3 minutes. This represents a 5-fold reduction in MRI scanning time.
 
 ### Q:      What question were you investigating in this project? Purpose
 The goal of the project was the development and clinical validation of a 3D free breathing cardiac LGE MRI technique 
