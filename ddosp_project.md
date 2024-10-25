@@ -1,6 +1,10 @@
 ## This can be your internal website page / project page
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** 3D-T1rho brain mapping has many useful biomedical applications but requires long data acquisition times. The goal 
+of the study was to apply a fast data-driven optimization approach, bias- accelerated subset selection (BASS), to generate optimal sampling 
+patterns (SPs) for compressed sensing (CS) reconstruction for brain 3D-T1ρ MRI. Five healthy volunteers were recruited and fully sampled (FS) 
+Cartesian, 3D-T1ρ MRI was obtained. The performance of Poisson disc (PD) and optimized SP were compared using normalized root mean square error (NRMSE). The data-driven optimized
+SP provides upto 2 times (NRMSE=0.09 optimized SP vs 0.18 PD-SP) improvement in images at the highest AFs tested.
 
 ### 1. Suggest hypotheses about the causes of observed phenomena
 
