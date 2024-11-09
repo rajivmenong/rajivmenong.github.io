@@ -1,5 +1,13 @@
 ## Selected Projects in Research, Machine Learning and Data Science
 ---
+### Big Mountain Resort Price Analysis
+ 
+This project looks at a pricing analysis at a snow ski resort. The project involved data wrangling, exploratory data analysis, feature engineering and modeling using linear regression and Random Forest models
+<br><br>
+[Project Details](https://github.com/rajivmenong/Big-Mountain-Resort-Pricing-Model) <br><br>
+<img src="images/DDOSP.png?raw=true"/>
+
+
 
 ### Learning based Optimization of data sampling for quantitative MRI brain mapping 
 In this study, a fast data-driven optimization algorithm, bias-accelerated subset selection (BASS), was used to generate optimized sampling patterns for data acquisition in MRI brain mapping
