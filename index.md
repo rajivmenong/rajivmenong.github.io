@@ -4,7 +4,7 @@
  
 This project looks at a pricing analysis at a snow ski resort. The project involved data wrangling, exploratory data analysis, feature engineering and modeling using linear regression and Random Forest models
 <br><br>
-[Github Code](https://github.com/rajivmenong/Big-Mountain-Resort-Pricing-Model) <br><br>
+[Code on Github](https://github.com/rajivmenong/Big-Mountain-Resort-Pricing-Model) <br><br>
 <img src="images/Figure2_skiMtn.png?raw=true"/>
 
 ---
