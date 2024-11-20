@@ -1,6 +1,6 @@
 ## Selected Projects in Research, Machine Learning and Data Science
 ---
-### Big Mountain Resort Price Analysis
+### Ski Resort Pricing Analysis
  
 This project looks at a pricing analysis at a snow ski resort. The project involved data wrangling, exploratory data analysis, feature engineering and modeling using linear regression and Random Forest models
 <br><br>
